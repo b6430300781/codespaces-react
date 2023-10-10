@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Hello from './Hello';
+import Counter from './Counter';
+import Bmi from './bmi';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Bmi/>
+    {/*<Counter/>
+    <Hello name="Maleena Mindo" age={21}/>
+    <Hello name="Kanoknan Junyalak" age={20}/>
+    <Hello name="Aunchisa Numnoi" age={20}/>
+    <Hello name="Johny!!"/>
+<Hello age={18}/>*/}
   </React.StrictMode>
 );
 
