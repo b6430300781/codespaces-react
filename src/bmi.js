@@ -4,8 +4,9 @@ const BMI=()=>{
     const height = useRef(null);
     const [Bmi, setBmi] = useState(0)
     function Reset() {
-        weight("");
-        height("");
+        weight.current.value=null;
+        height.current.value=null;
+        setBmi(0);
     }
     function calbmi() {
         setBmi(weight.current.value/Math.pow(height.current.value/100,2))
